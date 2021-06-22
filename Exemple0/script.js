@@ -5,8 +5,8 @@ class Task extends React.Component {
   }
   
   render() {
-    let class_name = 'task'
-    class_name += this.props.done ? ' task-success' : ' task-info';
+    let class_name = 'mission'
+    class_name += this.props.done ? ' mission-success' : ' mission-info';
   
     return (
       <div className={class_name}>
@@ -21,9 +21,9 @@ class Task extends React.Component {
 class App extends React.Component {
 
   tasksArray = [
-      {value: 'Tâche 1', done: true},
-      {value: 'Tâche 2', done: false},
-      {value: 'Tâche 3', done: false}
+      {value: 'mission 1', done: true},
+      {value: 'mission2', done: false},
+      {value: 'mission 3', done: false}
     ];
 
   constructor(props) {
